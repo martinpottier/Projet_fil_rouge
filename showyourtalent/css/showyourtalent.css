@@ -1,0 +1,1470 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+
+body{
+    background: url('../img/1.png');
+    font-family: sans-serif;
+    width: 100%;
+}
+
+
+/***Div invisible permet le retour haut de page***/
+#retour{
+    top: 0px;
+    left:0px;
+    height: 1px;
+    width: 100%;
+}
+
+/********************************************************/
+/********************** HEADER **************************/
+/********************************************************/
+
+/********************** HEADER HAUT**************************/
+header{
+    /**** position ****/
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    z-index: 9999;
+}
+
+header div{
+    /**** position ****/
+    display: flex;
+    align-content:space-around;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    /**** style ****/
+    background-color: white;
+    font-family: 'Carter One', cursive;
+    color: crimson;
+}
+
+
+header #titre img{
+    /**** style ****/
+    border-radius: 5px;
+}
+
+header #titre #logo{
+    /**** position ****/
+    width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+header #titre #logo img{
+    /**** position ****/
+    width: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header #titre #titre2{
+    /**** position ****/
+    font-size:16px;
+    margin-left: 30px;
+    
+}
+
+header #titre #titre2 a{
+    /**** style ****/
+    color: red;
+    list-style: none;
+    text-decoration: none;
+}
+
+header #titre #icons{
+    /**** position ****/
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+header #titre #icons img{
+    /**** position ****/
+    width: 30px;
+    padding: 2px;
+}
+
+/********************** HEADER NAV**************************/
+header nav{
+    /**** position ****/
+    height:60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /**** style ****/
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgba(209,19,0,0.8);
+}
+
+header nav a{
+    /**** style ****/
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    transition:0.3s;
+}
+
+header nav a:hover{ /**** Au passage de la souris ****/
+    /**** style ****/
+    color: whitesmoke;
+    transition: 0.3s;
+    background-color: brown;
+    border-radius: 2px;
+    /**** position ****/
+    padding: 8px;
+}
+
+/**************************************************************/
+/**************** CONTENUE PAGE D'ACCEUIL *********************/
+/**************************************************************/
+
+#carroussel{
+    /**** position ****/
+    width: 100%;
+    height: 390px;
+    margin-top: 160px
+}
+
+#carroussel h2{
+    /**** position ****/
+    margin-top: 70px;
+    margin: 0px 3px 0px 3px;
+    text-align: center;
+    /**** style ****/
+    font-size: 18px;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    text-shadow: #000000 0.5px 0.5px, #000000 0.5px 0.5px, #000000 0.5px 0.5px, #000000 0.5px 0.5px;
+}
+
+#slides {
+    /**** position ****/
+    position: relative; 
+    height: 300px;  
+    /**** style ****/
+    list-style-type: none; 
+} 
+
+.slide { 
+    /**** position ****/
+    position: absolute; 
+    margin-left: 5%;
+    margin-top: 60px;
+    width: 90%; 
+    height: 70%;
+    /**** style ****/
+    border-radius: 5%;
+    opacity: 0; 
+    transition: opacity 3s;  /**** temps entre chaque slide ****/
+} 
+
+.showing { 
+    opacity: 1;  /**** opacité de la slide montré ****/
+    z-index: 2; 
+} 
+
+.slide:nth-of-type(1) { 
+    background: url('../img/athletisme/athl%C3%A9tisme3.jpg'); 
+} 
+.slide:nth-of-type(2) { 
+    background: url('../img/foot/foot2.jpg'); 
+ } 
+.slide:nth-of-type(3) { 
+    background: url('../img/natation/natation1.jpg'); 
+} 
+.slide:nth-of-type(4) { 
+    background: url('../img/basket/basket4.jpg');   
+} 
+.slide:nth-of-type(5) { 
+    background: url('../img/handball/handball2.jpg'); 
+}
+.slide:nth-of-type(6) { 
+    background: url('../img/tennis/tennis%202.png'); 
+}
+
+li{
+    /**** position ****/
+    text-align: center;
+    /**** style ****/
+    color: black;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    text-shadow: white 1.5px 0.5px, white 1.5px 0.5px, white 1.5px 0.5px, white 1.5px 0.5px;
+    font-size: 19px;
+}
+
+/********************************************************/
+/**************** SECTION PARTENAIRES *******************/
+/********************************************************/
+
+#partenaires{
+    /**** position ****/
+    width: 100%;
+    height: 550px;
+    margin-top:80px;
+}
+
+#partenaires h3{
+    /**** position ****/
+    height: 40px;
+    text-align: center;
+    /**** style ****/
+    background-color: whitesmoke;
+    border-radius:10px;
+    font-size: 26px;
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+}
+
+#partenaires div{
+    /**** position ****/
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content:space-between;
+    align-items:center;
+    flex-direction: column;
+}
+
+#partenaires div img{
+    /**** position ****/
+    width: 200px;
+    padding: 10px;
+    /**** style ****/
+    border-radius: 18px;
+}
+/****************************************************************/
+/**************** SECTION RETOUR HAUT DE PAGE *******************/
+/***************************************************************/
+
+a#Retour{
+    /**** position ****/
+    position:fixed;
+    z-index:99999;
+    right:10px;
+    padding:10px;
+    text-align:center;
+    margin-bottom: 50px;
+    /**** style ****/
+    color:#fff;
+    border-radius:3px;
+    font-size:15px;
+    background:rgba(0, 0, 0, 0.25);
+    transition:all ease-in 0.2s; /**** apparition du bouton****/
+    text-decoration: none; /**** enleve la petite barre ****/
+}
+
+a#Retour:before{ 
+    content: "\25b2"; 
+}
+
+a#Retour:hover{
+    /**** style ****/
+    background:rgba(209,19,0,0.8);
+}
+
+a#Retour.Invisible{
+    /**** position ****/
+    bottom:-35px;
+    /**** style ****/
+    opacity:0; /**** permet de ne pas apparaitre avant le scrol ****/
+}
+
+a#Retour.Visible{
+    /**** position ****/
+    bottom:20px;
+    /**** style ****/
+    opacity:1;
+}
+
+/********************************************************************/
+/**************** CONTENUE PAGE DE PRESENTATION *********************/
+/********************************************************************/
+
+#presentation_contenu1{
+    /**** position ****/
+    display: flex;
+    margin-top: 170px;
+    margin-left: 7.5%;
+    height: 1520px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+
+
+#presentation_contenu2{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 1490px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#presentation_contenu2 p{
+    /**** position ****/
+    text-align: center;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 17px;
+}
+
+#presentation_contenu2 a{
+    /**** position ****/
+    margin-top: 10px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    color: black; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#presentation_contenu2 a:hover{ /**** Au passge de la souris ****/
+    /**** style ****/
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    transition: 0.3s;
+    /**** position ****/
+    padding: 5px;
+}
+
+#presentation_contenu2 h3{
+    /**** position ****/
+    padding-top: 30px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+}
+
+#presentation_contenu2 h2{
+    /**** position ****/
+    padding-bottom: 20px;
+    /**** style ****/
+    font-size:22px;  
+    font-family: 'Advent Pro', sans-serif;
+}
+
+/********************************************************************/
+/**************** CONTENUE PAGE DE L'EQUIPE *************************/
+/********************************************************************/
+
+#equipe_contenu1{
+    /**** position ****/
+    display: flex;
+    margin-top: 170px;
+    margin-left: 7.5%;
+    height: 1760px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)}
+
+
+#equipe_contenu2{
+    /**** position ****/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    height: 1730px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8) ;}
+
+
+#equipe_contenu2 article{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+}
+
+#equipe_contenu2 article img{
+    /**** position ****/
+    width:25%;
+}
+
+#equipe_contenu2 article p{
+    /**** position ****/
+    padding-left:7px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 14px;          
+}
+
+.bande {
+    /**** position ****/ 
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    background-color: rgba(200,200,200,0.8);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;       
+}
+
+#equipe_contenu2 > p{
+    /**** position ****/
+    padding-bottom: 20px;
+    /**** style ****/
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+/********************************************************************/
+/**************** CONTENUE PAGE PLANNING ****************************/
+/********************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.calendar{
+    /**** position ****/
+    margin-top: 200px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 100px;
+    /**** style ****/
+    background:#fff;
+    border-radius:4px;
+    color:#222629;
+    overflow:hidden;
+}
+
+button{
+    /**** style ****/
+    border:none;
+}
+
+.calendar .header{
+    /**** position ****/
+    height:40px;
+    text-align:center;
+    /**** style ****/
+    background:#ddd;
+    line-height:40px;
+}
+
+.calendar .month{
+    /**** position ****/
+    display:inline-block;
+    /**** style ****/
+    font-weight:bold;
+}
+
+.calendar button{
+    /**** position ****/
+    height:100%;
+    padding:0 15px;
+    /**** style ****/
+    background:none;
+    color:inherit;
+    cursor:pointer;
+    font-family:Consolas;
+    font-size:23px;
+    font-weight:bold;
+}
+
+.calendar button:hover{
+    /**** style ****/
+    color:rgba(209,19,0,0.8);
+}
+
+.calendar button:first-child{
+    /**** style ****/
+    float:left;
+}
+
+.calendar button:last-child{
+    /**** style ****/
+    float:right;
+}
+
+.calendar .cell{
+    /**** position ****/
+    display:inline-block;
+    padding:10px 0;
+    text-align:center;
+    width:calc(100% / 7);
+    /**** style ****/
+    background:#fff;
+    color:#5d5d5d;
+    box-sizing:border-box;
+}
+
+.calendar .day{
+    /**** position ****/
+    padding:8px 0;
+    /**** style ****/
+    font-size:.8rem;
+}
+
+.calendar .day, .calendar .today{
+    /**** style ****/
+    background:rgba(209,19,0,0.8);
+    color:#fff;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width:70%;
+    height: 150px;
+    margin-left: 15%;
+    font-family: 'Advent Pro', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+/********************************************************************/
+/**************** CONTENUE PAGE DE GALERIE **************************/
+/********************************************************************/
+
+#galerie_contenu{
+    /**** position ****/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 170px;
+    height: 3200px;
+    /**** style ****/
+    background-color: rgba(240,240,240,0.8);  
+}
+
+#galerie_contenu h2{
+    /**** style ****/
+    font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#galerie_contenu h3{
+    /**** position ****/
+    margin-bottom: 10px;
+    /**** style ****/
+    font-size: 14px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+#galerie_contenu .galerie{
+    /**** position ****/
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#galerie_contenu img{
+    /**** position ****/
+    height: 150px;
+    margin-top: 10px;
+}
+
+/********************************************************************/
+/**************** CONTENUE PAGE DE CONTACT **************************/
+/********************************************************************/
+
+#contact_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 170px;
+    margin-left: 7.5%;
+    height: 430px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+
+#contact_contenu h2{
+    /**** style ****/
+    font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+#contact_contenu #formulaire1{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 400px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#contact_contenu #formulaire1 form{
+    /**** position ****/
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 70%;
+    margin-left: 10px; 
+}
+
+#contact_contenu #formulaire1 form label{
+    /**** position ****/
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 10px;
+    /**** style ****/
+    font-size: 15px;
+}
+
+#contact_contenu #formulaire1 form input, textarea[type="text"]{
+    /**** position ****/
+    padding: 10px;
+    /**** style ****/
+    font-size: 14px;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-family: 'Advent Pro';
+}
+
+#contact_contenu #formulaire1 form, textarea{
+    /**** position ****/
+    width: auto;
+}
+
+
+/****************************************************************************/
+/**************** CONTENUE PAGE DE MENTION LEGALES **************************/
+/****************************************************************************/
+
+#ml_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 170px;
+    margin-left: 7.5%;
+    height: 1530px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+    
+
+#ml_contenu .text{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 1500px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#ml_contenu h2{
+    /**** position ****/
+    margin-bottom: 20px;
+    /**** style ****/
+    font-size: 20px;
+}
+
+#ml_contenu .text a{
+    /**** position ****/
+    margin-left: 15px;
+    margin-right: 15px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 14px;
+}
+
+/****************************************************************************/
+/**************** CONTENUE PAGE NEWSLETTER **********************************/
+/****************************************************************************/
+
+#news_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 170px;
+    margin-left: 7.5%;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)}
+
+#news_contenu h2{
+    /**** position ****/
+    text-align: center;
+    /**** style ****/
+    font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+#news_contenu #formulaire2{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 370px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#news_contenu #formulaire2 form{
+    /**** position ****/
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 15px;
+}
+
+#news_contenu #formulaire2 form label{
+    /**** position ****/
+    margin-right: 10px;
+    padding: 10px;
+    /**** style ****/
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#news_contenu #formulaire2 form input[type="text"]{
+    /**** position ****/
+    padding: 10px;
+    /**** style ****/
+    font-size: 14px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+#news_contenu #formulaire2 form input[type="submit"]{
+    /**** position ****/
+    padding: 10px;
+    margin-top: 20px;
+    /**** style ****/
+    font-size: 14px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+
+#news_contenu #formulaire2 form input p{
+    /**** style ****/
+    font-size:20px;
+}
+
+/********************************************************/
+/********************** FOOTER **************************/
+/********************************************************/
+
+footer{
+    /**** position ****/
+    margin-top: 40px;
+    width: 100%;
+    position:inherit;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    align-items: center;
+    /**** style ****/
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#bas>a{
+    /**** position ****/
+    margin: 4px;
+    /**** style ****/
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    /**** style ****/
+    font-size:12px;
+    font-family: 'Carter One', cursive;
+}
+/********************************************************************/
+/**************** CONTENUE PAGE REUSSI ******************************/
+/********************************************************************/
+#reussi_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 200px;
+    margin-left: 7.5%;
+    margin-bottom: 126px;
+    height: 280px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+
+#reussi_contenu #message{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 250px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#reussi_contenu h2{
+    /**** style ****/
+    font-size: 15px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#reussi_contenu a{
+    /**** style ****/
+    font-size: 17px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#reussi_contenu a:hover{
+    /**** style ****/
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    transition: 0.3s;
+    /**** position ****/
+    padding: 5px;
+}
+
+
+
+
+
+
+/*********************************************************************/
+/********************** RESPONSIVE TABLETTE **************************/
+/*********************************************************************/
+
+@media (min-width:400px) AND (max-width:960px) {
+   
+    /******************** HEADER **************************/
+
+    header div{
+        height: 70px;
+    }
+
+    header #titre #titre2{
+        font-size:30px;
+        margin-left: 70px; 
+    }
+
+    header #titre img{
+        border-radius: 20px;
+    }
+
+    header nav{
+        height:50px;
+    }
+    header nav a{
+        font-size: 15px;    
+    }
+
+    /******************** FOOTER **************************/
+    footer{
+        height: 50px;
+    }
+
+    #bas>a{
+        font-size: 15px;
+    }
+
+    footer p{
+        font-size:15px;
+    }   
+
+    /******************** CONTENUE PAGE D'ACCEUIL **************************/
+
+    #carroussel h2{
+        margin-top: 170px;
+        text-align: center;
+        font-family: 'Advent Pro', sans-serif;
+    }
+
+    h3{
+        margin-top: -20px;
+    }
+
+    #slides { 
+        position: relative; 
+        height: 470px;  
+        list-style-type: none; 
+    } 
+
+    .slide { 
+        position: absolute; 
+        margin-left: 10%;
+        margin-top: 60px;
+        width: 80%; 
+        height: 70%; 
+        opacity: 0; 
+        
+    } 
+    .showing { 
+        opacity: 1; 
+        z-index: 2; 
+    } 
+
+   .slide:nth-of-type(1) { 
+    background: url('../img/tablette/athl%C3%A9tisme3tab.jpg'); 
+    } 
+    .slide:nth-of-type(2) { 
+        background: url('../img/tablette/foot2tab.jpg'); 
+     } 
+    .slide:nth-of-type(3) { 
+        background: url('../img/tablette/natation1.jpg'); 
+    } 
+    .slide:nth-of-type(4) { 
+        background: url('../img/tablette/basket4.jpg');   
+    } 
+    .slide:nth-of-type(5) { 
+        background: url('../img/tablette/handball2.jpg'); 
+    }
+    .slide:nth-of-type(6) { 
+        background: url('../img/tablette/tennis%202.png'); 
+    }
+
+    #partenaires h3{
+        font-family: 'Advent Pro', sans-serif;
+        padding-bottom: 30px;
+    }
+    /******************** CONTENUE PRESENTATION **************************/
+
+    #presentation_contenu1{
+        margin-top: 200px;
+        height: 980px;
+    }
+
+    #presentation_contenu2{
+        height: 920px;
+    }
+
+    /******************** CONTENUE L'EQUIPE **************************/
+    #equipe_contenu1{
+        margin-top: 200px;
+        height: 1300px;
+    }
+
+    #equipe_contenu2{
+        height: 1240px;
+    }
+
+    #equipe_contenu2 .sport{
+        display:flex;
+        flex-direction: row;
+    }
+    
+    #equipe_contenu2 article p{
+        font-size: 19px;
+    }
+    
+    #equipe_contenu2 article img{
+        width: 40%;
+    }
+
+    #equipe_contenu2 > p{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+
+    /******************** CONTENUE PLANNING **************************/   
+
+
+    .calendar .header{
+      height:60px;
+    }
+
+    .calendar{
+         margin-top: 250px;
+         margin-bottom: 170px;
+    }
+    .info{
+    width:80%;
+    height: 160px;
+    margin-left: 10%;
+    font-size:18px;
+    padding: 10px;
+    }
+
+    
+/**************** CONTENUE PAGE DE GALERIE **************************/
+
+#galerie_contenu{
+    /**** position ****/
+    height: 1720px;
+}
+
+#galerie_contenu h2{
+    /**** style ****/
+    margin-top: 20px;
+}
+
+#galerie_contenu h3{
+    /**** position ****/
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#galerie_contenu .galerie{
+    /**** position ****/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#galerie_contenu img{
+    /**** position ****/
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    /******************** CONTENUE CONTACT **************************/   
+     #contact_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 300px;
+    margin-left: 15%;
+    margin-bottom: 230px;
+    height: 455px;
+    width: 70%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+    }
+
+
+
+    #contact_contenu #formulaire1{
+    /**** position ****/
+    height: 400px;
+    width: 90%;
+    }
+    
+    #contact_contenu #formulaire1 form{
+    /**** position ****/
+    width: 70%;
+    }
+
+
+    /******************** CONTENUE MENTION LEGALE **************************/  
+    #ml_contenu{
+        margin-top: 200px;
+        height: 900px;
+    }
+
+    #ml_contenu .text{
+        height: 840px;
+    }
+
+    /******************** CONTENUE NEWSLETTER **************************/
+
+    #news_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 370px;
+    margin-left: 15%;
+    margin-bottom: 180px;
+    height: 425px;
+    width: 70%;
+    }
+
+
+
+    #news_contenu #formulaire2{
+    /**** position ****/
+    height: 370px;
+    }
+}
+
+/**************** CONTENUE PAGE REUSSI ******************************/
+
+#reussi_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 480px;
+    margin-bottom: 215px;
+    height: 280px;
+
+}
+
+#reussi_contenu #message{
+    /**** position ****/
+    height: 220px;
+    width: 90%;
+
+}
+
+#reussi_contenu h2{
+    /**** style ****/
+    font-size: 20px;
+}
+
+#reussi_contenu a{
+    /**** style ****/
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
+/********************** RESPONSIVE ORDI ******************************/
+/*********************************************************************/
+
+@media (min-width:960px){
+    
+    body{
+        background: url('../img/ordi/1ordi2.png');
+    }
+    /******************** HEADER **************************/
+    header div{
+        height: 70px;
+    }
+
+    header #titre #titre2{
+        font-size:30px;
+    }
+    header nav a{
+        font-size: 16px;
+    }
+    
+    header nav{
+    /**** position ****/
+    height:45px;
+    }
+
+    /******************** FOOTER **************************/
+    footer{
+        height: 60px;
+    }
+
+    #bas>a{
+        font-size: 16px;
+    }
+
+    footer p{
+        font-size:16px;
+    }   
+
+    /******************** CONTENUE PAGE D'ACCEUIL **************************/
+
+    #carroussel h2{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #slides { 
+        height: 600px;  
+    } 
+
+    .slide { 
+        margin-left: 25%;
+        width: 50%; 
+        height: 70%; 
+    } 
+
+    .slide:nth-of-type(1) { 
+    background: url('../img/ordi/athl%C3%A9tisme3ordi.jpg'); 
+    } 
+    .slide:nth-of-type(2) { 
+        background: url('../img/ordi/foot2ordi.jpg'); 
+    } 
+    .slide:nth-of-type(3) { 
+        background: url('../img/ordi/natation1.jpg'); 
+    }
+    .slide:nth-of-type(4) { 
+        background: url('../img/ordi/basket4.jpg'); 
+     } 
+    .slide:nth-of-type(5) { 
+        background: url('../img/ordi/handball2.jpg');   
+    } 
+    .slide:nth-of-type(6) { 
+        background: url('../img/ordi/tennis%202.png'); 
+    }
+
+    #partenaires h3{
+        margin-top: 310px;
+        height: 50px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #partenaires div img{
+        width: 250px;
+    }
+    /******************** CONTENUE PRESENTATION **************************/
+
+    #presentation_contenu1{
+        margin-top: 200px;
+        height: 1310px;
+    }
+
+    #presentation_contenu2{
+        height: 1200px;
+        width: 90%;
+    }
+
+    #presentation_contenu2 p{
+        font-size: 23px;}
+
+    #presentation_contenu2 a{
+            text-decoration: none;
+            color: black; 
+            margin-top: 10px;
+    }
+
+    #presentation_contenu2 h3{
+        padding-top: 50px;
+    }
+
+    #presentation_contenu2 h2{
+        padding-bottom: 20px;
+        font-size:22px;   
+    }
+    /******************** CONTENUE L'EQUIPE **************************/
+    #equipe_contenu1{
+        margin-top: 200px;
+        height: 1750px;
+    }
+
+    #equipe_contenu2{
+        height: 1650px;
+    }
+
+    #equipe_contenu2 .sport{
+        display:flex;
+        flex-direction: row;
+    }
+
+    #equipe_contenu2 article p{
+        font-size: 23px;
+    }
+    #equipe_contenu2 article img{
+        width: 40%;
+    }
+
+    #equipe_contenu2 > p{
+        font-size: 29px;
+        margin-top: 20px;
+        
+    }
+
+    /******************** CONTENUE PLANNING **************************/   
+
+
+    .calendar .header{
+      height:60px;
+    }
+
+    .calendar{
+         margin-top: 190px;
+         margin-bottom: 50px;
+    }
+    
+    .info{
+    width:50%;
+    height: 160px;
+    margin-left: 25%;
+    font-size:18px;
+    padding: 10px;
+    }
+
+    /******************** CONTENUE CONTACT **************************/   
+    #contact_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 200px;
+    margin-left: 27.5%;
+    height: 455px;
+    width: 45%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+
+
+
+#contact_contenu #formulaire1{
+    /**** position ****/
+    height: 400px;
+    width: 90%;
+}
+
+    /**************** CONTENUE PAGE DE GALERIE **************************/
+
+#galerie_contenu{
+    /**** position ****/
+    height: 970px;
+}
+
+#galerie_contenu h2{
+    /**** style ****/
+    margin-top: 20px;
+}
+
+#galerie_contenu h3{
+    /**** position ****/
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#galerie_contenu .galerie{
+    /**** position ****/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#galerie_contenu img{
+    /**** position ****/
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+    /******************** CONTENUE MENTION LEGALE **************************/  
+  #ml_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 200px;
+    margin-left: 7.5%;
+    height: 1000px;
+    width: 85%;
+    /**** style ****/
+    background-color: rgba(255, 255, 255,0.7)
+}
+    
+
+#ml_contenu .text{
+    /**** position ****/
+    display: flex;
+    padding: 30px;
+    margin: 5%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 900px;
+    width: 90%;
+    /**** style ****/
+    background-color: white;
+    border: 4px solid rgba(200,200,200,0.8);
+}
+
+#ml_contenu .text a{
+    font-size: 18px;
+}
+
+    /******************** CONTENUE NEWSLETTER **************************/
+
+    #news_contenu{
+    /**** position ****/
+    margin-top: 200px;
+    margin-left: 27.5%;
+    height: 425px;
+    width: 45%;
+    }
+
+
+
+    #news_contenu #formulaire2{
+    /**** position ****/
+    height: 370px;
+    }
+/**************** CONTENUE PAGE REUSSI ******************************/
+
+#reussi_contenu{
+    /**** position ****/
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    height: 280px;
+
+}
+
+#reussi_contenu #message{
+    /**** position ****/
+    height: 180px;
+    width: 90%;
+
+}
+
+#reussi_contenu h2{
+    /**** style ****/
+    font-size: 20px;
+}
+
+#reussi_contenu a{
+    /**** style ****/
+    font-size: 20px;
+}
